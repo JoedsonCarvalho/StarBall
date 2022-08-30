@@ -1,0 +1,112 @@
+
+body {
+    font-family: 'Anek Telugu';font-size: 22px;
+    background-image: url("..\\img\\stars-image.jpg");
+    width: 98%;
+    height: 100%
+}
+
+/*header*/
+.navbar {
+    background: rgb(240,242,239);
+    width: 40%;
+    height: 70px;
+    margin: 15px auto;
+}
+
+.navbar section {
+    height: 300px;
+}
+
+.btn-crono {
+    background: rgb(0,12,49);
+    padding: 6px;
+    margin:10px;
+    color : rgb(240,242,239);
+}
+
+.pontos {
+    border-style: solid;
+    border-color: rgb(0,12,49);
+    background: white;
+    width: 130px;
+    height: 50px;
+    text-align:center;
+    font-size: 45px;
+    margin-left: 240px;
+    margin-top: -56px;
+}
+
+.cronometro {
+    border-style: solid;
+    border-color: rgb(0,12,49);
+    background: rgb(240,242,239);
+    width: 99px;
+    height: 50px;
+    margin-left:400px;
+    margin-top: -43px;
+    text-align:center;
+    font-size: 45px;
+}
+
+/* main */
+
+main {
+    height: 50px;
+    max-height: 50px;
+}
+
+.circulo {
+    background: rgb(240,242,239);
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+}
+
+/* .circuloClicado {
+    background: rgb(240,242,239);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display:none;
+    /* position: absolute; */
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
