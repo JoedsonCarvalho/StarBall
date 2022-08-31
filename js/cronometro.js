@@ -9,8 +9,8 @@ let cronometro = document.getElementById('cronometro')
 let btnReset = document.getElementById('btn-reset')
 let circulo = document.getElementById('circulo')
 let pontuacao = document.getElementById('pontos')
-let temp
-let temp2
+let temp;
+let temp2;
 
 let tempoFixoCronometro = 10
 cronometro.textContent = tempoFixoCronometro;
@@ -23,28 +23,34 @@ var posicaoAleatoria = (element) =>{
     element.style.marginLeft = l +'px'
 }
 
+var mudaCor = (element) => {
+    element.style.background =  '#'  + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0')
+}
+
 function startCronometro(){
-    var tempCrono = setInterval(() => {
+    let tempCrono = setInterval(() => {
         cronometro.textContent --;
         posicaoAleatoria(circulo)
-
+        mudaCor(circulo)
+        
         if (cronometro.textContent <= 0 ){
             clearInterval(tempCrono)
         }
-    
+        
     }, 1000)
     temp = tempCrono
-
+    
     let tempCirculo = setInterval(() => {
         
         if (cronometro.textContent <= 0 ){
             clearInterval(tempCirculo)
         }
-
+        
         
     }, 2000)
     temp2 = tempCirculo
-
+    circulo.style.display = none
+    
 }
 
 btnReset.addEventListener('click', () => {
@@ -60,6 +66,9 @@ btnReset.addEventListener('click', () => {
 function adicionaPontos(){   
     var somaPonto = parseInt(pontuacao.textContent);
     pontuacao.textContent = 5 + somaPonto
+    // mudaCor(circulo)    
+    posicaoAleatoria(circulo)
+
 
 }
 
