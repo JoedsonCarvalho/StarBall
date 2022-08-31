@@ -1,7 +1,6 @@
 window.onload = () => {
     btnStart.addEventListener('click',startCronometro)
     circulo.addEventListener('click', adicionaPontos)
-
 }
 
 let btnStart = document.getElementById('btn-start')
@@ -17,8 +16,18 @@ cronometro.textContent = tempoFixoCronometro;
 
 
 var posicaoAleatoria = (element) =>{
-    let t =  Math.floor(Math.random() * 500)
-    let l =  Math.floor(Math.random() * 850)
+    let multiplicadorTop;
+    let multiplicadorLeft;
+    if(window.innerWidth < 460){
+        multiplicadorTop = 509
+        multiplicadorLeft = 399
+    }
+    else{
+        multiplicadorTop = 500
+        multiplicadorLeft = 850
+    }
+    let t =  Math.floor(Math.random() * multiplicadorTop)
+    let l =  Math.floor(Math.random() * multiplicadorLeft)
     element.style.marginTop = t +'px'
     element.style.marginLeft = l +'px'
 }
