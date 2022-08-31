@@ -17,8 +17,8 @@ cronometro.textContent = tempoFixoCronometro;
 
 
 var posicaoAleatoria = (element) =>{
-    let t =  Math.floor(Math.random() * 550)
-    let l =  Math.floor(Math.random() * 700)
+    let t =  Math.floor(Math.random() * 500)
+    let l =  Math.floor(Math.random() * 850)
     element.style.marginTop = t +'px'
     element.style.marginLeft = l +'px'
 }
@@ -30,6 +30,7 @@ var mudaCor = (element) => {
 function startCronometro(){
     let tempCrono = setInterval(() => {
         cronometro.textContent --;
+        circulo.style.display = 'block'        
         posicaoAleatoria(circulo)
         mudaCor(circulo)
         
@@ -43,13 +44,14 @@ function startCronometro(){
     let tempCirculo = setInterval(() => {
         
         if (cronometro.textContent <= 0 ){
+            circulo.style.display = 'none'
             clearInterval(tempCirculo)
+
         }
         
         
-    }, 2000)
+    }, 1000)
     temp2 = tempCirculo
-    circulo.style.display = none
     
 }
 

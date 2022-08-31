@@ -20,9 +20,10 @@ body {
 
 .btn-crono {
     background: rgb(0,12,49);
-    padding: 6px;
+    padding: 8px;
     margin:10px;
     color : rgb(240,242,239);
+    width: 80px;
 }
 
 .pontos {
@@ -60,7 +61,7 @@ main {
     background: rgb(240,242,239);
     width: 100px;
     height: 100px;
-    display: block;
+    display: none;
     border-radius: 50%;
 }
 
