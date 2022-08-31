@@ -12,7 +12,7 @@ let pontuacao = document.getElementById('pontos')
 let temp;
 let temp2;
 
-let tempoFixoCronometro = 10
+let tempoFixoCronometro = 30
 cronometro.textContent = tempoFixoCronometro;
 
 
